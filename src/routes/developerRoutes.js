@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const { store } = require('../controllers/developerController');
 
 const routes = Router();
 
@@ -6,9 +7,7 @@ routes.get('/developers', (req, res) => {
     // get code here
 });
 
-routes.post('/developers', (req, res) => {
-    // post code here
-});
+routes.post('/developers', store);
 
 routes.put('/developers', (req, res) => {
     // put code here

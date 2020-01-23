@@ -5,7 +5,7 @@ const developerRoutes = require('./routes/developerRoutes');
 
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017', {
+mongoose.connect('mongodb://localhost:27017/upcoming-devs', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -13,4 +13,4 @@ mongoose.connect('mongodb://localhost:27017', {
 app.use(express.json());
 app.use(developerRoutes);
 
-app.listen(3333);
+app.listen(5000);

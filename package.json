@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Cligor/-upcoming-devs-api#readme",
   "dependencies": {
+    "axios": "^0.19.1",
     "express": "^4.17.1",
     "mongoose": "^5.8.7"
   },
